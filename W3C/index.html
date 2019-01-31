@@ -117,39 +117,124 @@
             </article>
 
             <article>
-                <h4></h4>
-                <em></em>
-                <p></p>
+                <h4>1.5. Design notes</h4>
+                <em>This section is non-normative.</em>
+                <p>It must be admitted that many aspects of HTML appear at first glance to be nonsensical and inconsistent.</p>
+                <p>HTML, its supporting DOM APIs, as well as many of its supporting technologies, have been developed over a period of several decades by a wide array of people with different priorities who, in many cases, did not know of each other’s existence.</p>
+                <p>Features have thus arisen from many sources, and have not always been designed in especially consistent ways. Furthermore, because of the unique characteristics of the Web, implementation bugs have often become de-facto, and now de-jure, standards, as content is often unintentionally written in ways that rely on them before they can be fixed.</p>
+                <p>Despite all this, efforts have been made to adhere to certain design goals. These are described in the next few subsections.</p>
             </article>
 
             <article>
-                <h4></h4>
-                <em></em>
-                <p></p>
+                <h5>1.5.1. Serializability of script execution</h5>
+                <em>This section is non-normative.</em>
+                <p>
+                    To avoid exposing Web authors to the complexities of multithreading, the HTML and DOM APIs are designed such that no script can ever detect the simultaneous execution of other scripts. Even with
+                    <a href="">workers</a>
+                    , the intent is that the behavior of implementations can be thought of as completely serializing the execution of all scripts in all
+                    <a href="">browsing contexts.</a>
+                </p>
             </article>
 
             <article>
-                <h4></h4>
-                <em></em>
-                <p></p>
+                <h5>1.5.2. Compliance with other specifications</h5>
+                <em>This section is non-normative.</em>
+                <p>This specification interacts with and relies on a wide variety of other specifications. In certain circumstances, unfortunately, conflicting needs have led to this specification violating the requirements of these other specifications. Whenever this has occurred, the transgressions have each been noted as a "<b>willful violation</b>", and the reason for the violation has been noted.</p>
             </article>
 
             <article>
-                <h4></h4>
-                <em></em>
-                <p></p>
+                <h5>1.5.3. Extensibility</h5>
+                <em>This section is non-normative.</em>
+                <p>HTML has a wide array of extensibility mechanisms that can be used for adding semantics in a safe manner:</p>
+                <ul>
+                    <li>
+                        <p>
+                            Authors can use the
+                            <a href="">class</a>
+                            attribute to extend elements, effectively creating their own elements, while using the most applicable existing "real" HTML element, so that browsers and other tools that don’t know of the extension can still support it somewhat well. This is the tack used by microformats, for example.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Authors can include data for inline client-side scripts or server-side site-wide scripts to process using the
+                            <a href="">data-*=""</a>
+                            attributes. These are guaranteed to never be touched by browsers, and allow scripts to include data on HTML elements that scripts can then look for and process.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Authors can use the
+                            <a href="">&lt;meta name="" content=""&gt;</a>
+                            mechanism to include page-wide metadata by registering
+                            <a href="">extensions to the predefined set of metadata names</a>
+                            .
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Authors can use the
+                            <a href="">rel=""</a>
+                            mechanism to annotate links with specific meanings by registering
+                            <a href="">extensions to the predefined set of link types</a>
+                            . This is also used by microformats.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Authors can embed raw data using the
+                            <a href="">&lt;script type=""&gt;</a>
+                            mechanism with a custom type, for further handling by inline or server-side scripts.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Authors can extend APIs using the JavaScript prototyping mechanism. This is widely used by script libraries, for instance.
+                        </p>
+                    </li>
+                </ul>
             </article>
 
             <article>
-                <h4></h4>
-                <em></em>
-                <p></p>
+                <h4>1.6. HTML vs XML Syntax</h4>
+                <em>This section is non-normative.</em>
+                <p>This specification defines an abstract language for describing documents and applications, and some APIs for interacting with in-memory representations of resources that use this language.</p>
+                <p>The in-memory representation is known as "DOM HTML", or "the DOM" for short.</p>
+                <p>There are various concrete syntaxes that can be used to transmit resources that use this abstract language, two of which are defined in this specification.</p>
+                <p>
+                    The first such concrete syntax is the HTML syntax. This is the format suggested for most authors. It is compatible with most legacy Web browsers. If a document is transmitted with the
+                    <a href="">text/html</a>
+                    <a href="">MIME type</a>
+                    , then it will be processed as an HTML document by Web browsers. This specification defines the latest version of the HTML syntax, known simply as "HTML".
+                </p>
+                <p>
+                    The second concrete syntax is the XHTML syntax, which is an application of XML. When a document is transmitted with an
+                    <a href="">XML MIME type</a>
+                    , such as
+                    <a href="">application/xhtml+xml</a>, then it is treated as an XML document by Web browsers, to be parsed by an XML processor. Authors are reminded that the processing for XML and HTML differs; in particular, even minor syntax errors will prevent a document labeled as XML from being rendered fully, whereas they would be ignored in the HTML syntax. This specification defines the latest version of the XHTML syntax, known simply as "XHTML".
+                </p>
+                <p>
+                    The DOM, the HTML syntax, and the XHTML syntax cannot all represent the same content. For example, namespaces cannot be represented using the HTML syntax, but they are supported in the DOM and in the XHTML syntax. Similarly, documents that use the
+                    <a href="">&lt;noscript&gt;</a>
+                    feature can be represented using the HTML syntax, but cannot be represented with the DOM or in the XHTML syntax. Comments that contain the string "-->" can only be represented in the DOM, not in the HTML and XHTML syntaxes.
+                </p>
             </article>
 
             <article>
-                <h4></h4>
-                <em></em>
-                <p></p>
+                <h4>1.7. Structure of this specification</h4>
+                <em>This section is non-normative.</em>
+                <p>This specification is divided into the following major sections:</p>
+
+                <nav>
+                    <!--TODO: Add navigation with paragraphs-->
+                </nav>
+
+                <p>
+                    There are also some appendices, listing
+                    <a href="">§11 Obsolete features</a>
+                    and
+                    <a href="">§12 IANA considerations</a>
+                    , and several indices.
+                </p>
             </article>
 
             <article>
