@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ee17f92-4b00-4faf-a7cc-06aeb43c87f9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Facebook/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Gmail/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML5Doctor/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/W3C/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/W3C/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/W3C/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,8 +18,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/W3C/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="789">
-              <caret line="63" selection-start-line="63" selection-end-line="63" />
+            <state relative-caret-position="562">
+              <caret line="116" column="23" selection-start-line="116" selection-start-column="23" selection-end-line="116" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -109,23 +106,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1548965959788</updated>
-      <workItem from="1548965961054" duration="1158000" />
+      <workItem from="1548965961054" duration="1988000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1158000" />
+    <option name="totallyTimeSpent" value="1988000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24954791" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24954791" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32959184" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -166,8 +163,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/W3C/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="789">
-          <caret line="63" selection-start-line="63" selection-end-line="63" />
+        <state relative-caret-position="562">
+          <caret line="116" column="23" selection-start-line="116" selection-start-column="23" selection-end-line="116" selection-end-column="23" />
         </state>
       </provider>
     </entry>
