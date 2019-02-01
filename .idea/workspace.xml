@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ee17f92-4b00-4faf-a7cc-06aeb43c87f9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/W3C/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/W3C/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML5Doctor/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML5Doctor/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,26 +16,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/W3C/index.html">
+        <entry file="file://$PROJECT_DIR$/HTML5Doctor/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="461" column="50" selection-start-line="461" selection-start-column="50" selection-end-line="461" selection-end-column="50" />
-              <folding>
-                <element signature="e#15692#15696#0" expanded="true" />
-                <element signature="e#15719#15723#0" expanded="true" />
-                <element signature="e#16602#16606#0" expanded="true" />
-                <element signature="e#16620#16624#0" expanded="true" />
-                <element signature="e#19270#19274#0" expanded="true" />
-                <element signature="e#19282#19286#0" expanded="true" />
-                <element signature="e#24776#24780#0" expanded="true" />
-                <element signature="e#24784#24788#0" expanded="true" />
-                <element signature="e#31857#31861#0" expanded="true" />
-                <element signature="e#31865#31869#0" expanded="true" />
-                <element signature="e#32010#32014#0" expanded="true" />
-                <element signature="e#32019#32023#0" expanded="true" />
-                <element signature="e#33152#33156#0" expanded="true" />
-                <element signature="e#33157#33161#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="667">
+              <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -61,11 +45,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/HTML5Doctor/index.html" />
         <option value="$PROJECT_DIR$/Facebook/index.html" />
         <option value="$PROJECT_DIR$/Gmail/index.html" />
         <option value="$PROJECT_DIR$/W3C/style.css" />
         <option value="$PROJECT_DIR$/W3C/index.html" />
+        <option value="$PROJECT_DIR$/HTML5Doctor/index.html" />
       </list>
     </option>
   </component>
@@ -88,6 +72,11 @@
             <path>
               <item name="Web" type="b2602c69:ProjectViewProjectNode" />
               <item name="Web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Web" type="462c0819:PsiDirectoryNode" />
+              <item name="HTML5Doctor" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Web" type="b2602c69:ProjectViewProjectNode" />
@@ -131,12 +120,12 @@
       <option name="presentableId" value="Default" />
       <updated>1548965959788</updated>
       <workItem from="1548965961054" duration="4409000" />
-      <workItem from="1549014236876" duration="4186000" />
+      <workItem from="1549014236876" duration="4649000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8595000" />
+    <option name="totallyTimeSpent" value="9058000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -151,7 +140,7 @@
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15732369" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15732369" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -162,8 +151,8 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32959184" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.1734694" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32959184" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.1734694" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -174,13 +163,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/HTML5Doctor/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Facebook/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
@@ -204,8 +186,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/W3C/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="461" column="50" selection-start-line="461" selection-start-column="50" selection-end-line="461" selection-end-column="50" />
+        <state relative-caret-position="9000">
+          <caret line="375" column="24" selection-start-line="375" selection-start-column="24" selection-end-line="375" selection-end-column="24" />
           <folding>
             <element signature="e#15692#15696#0" expanded="true" />
             <element signature="e#15719#15723#0" expanded="true" />
@@ -222,6 +204,13 @@
             <element signature="e#33152#33156#0" expanded="true" />
             <element signature="e#33157#33161#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTML5Doctor/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="667">
+          <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
         </state>
       </provider>
     </entry>
