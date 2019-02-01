@@ -432,10 +432,47 @@
                     <a href="">unquoted</a>
                     if it doesn’t contain
                     <a href="">space characters</a>
-                    or any of <span class="orange">" ' ` = </span> or <span class="orange">></span>. Otherwise, it has to be quoted using either single or double quotes. The value, along with the "=" character, can be omitted altogether if the value is the empty string.
+                    or any of <span class="orange">" ' ` = </span> or <span class="orange">></span>. Otherwise, it has to be quoted using either single or double quotes. The value, along with the "<span class="orange">=</span>" character, can be omitted altogether if the value is the empty string.
                 </p>
-            </article>
+                <code>
+                    <!--TODO: Add code here-->
+                </code>
+                <p>
+                    HTML user agents (e.g., Web browsers) then <a href="">parse</a> this markup, turning it into a DOM (Document Object Model) tree. A DOM tree is an in-memory representation of a document.
+                </p>
+                <p>
+                    DOM trees contain several kinds of nodes, in particular a
+                    <a href="" class="orange">DocumentType</a>
+                    node,
+                    <a href="" class="orange">Element</a>
+                    nodes,
+                    <a href="" class="orange">Text</a>
+                    nodes,
+                    <a href="" class="orange">Comment</a>
+                    nodes, and in some cases
+                    <a href="">ProcessingInstruction</a>
+                    nodes.
+                </p>
+                <p>
+                    The <a href="">markup snippet at the top of this section</a> would be turned into the following DOM tree:
+                </p>
+                <code>
+                    <!--TODO: Insert html code here-->
+                </code>
+                <!--TODO: Fix all paragraphs below-->
+                <p>
+                    The document element of this tree is the html element, which is the element always found in that position in HTML documents. It contains two elements, head and body, as well as a Text node between them.
+                </p>
+                <p>
+                    There are many more Text nodes in the DOM tree than one would initially expect, because the source contains a number of spaces (represented here by "␣") and line breaks ("⏎") that all end up as Text nodes in the DOM. However, for historical reasons not all of the spaces and line breaks in the original markup appear in the DOM. In particular, all the white space before head start tag ends up being dropped silently, and all the white space after the body end tag ends up placed at the end of the body.
+                </p>
+                <p>
+                    The head element contains a title element, which itself contains a Text node with the text "Sample page". Similarly, the body element contains an h1 element, a p element, and a comment.
+                </p>
+                <div class="separation">
 
+                </div>
+            </article>
         </section>
     </main>
 
