@@ -241,23 +241,164 @@
                 <h5>1.7.1. How to read this specification</h5>
                 <p>This specification should be read like all other specifications. First, it should be read cover-to-cover, multiple times. Then, it should be read backwards at least once. Then it should be read by picking random sections from the contents list and following all the cross-references.</p>
                 <p>As described in the conformance requirements section below, this specification describes conformance criteria for a variety of conformance classes. In particular, there are conformance requirements that apply to <em>producers</em>, for example authors and the documents they create, and there are conformance requirements that apply to <em>consumers</em>, for example Web browsers. They can be distinguished by what they are requiring: a requirement on a producer states what is allowed, while a requirement on a consumer states how software is to act.</p>
-                <!--TODO: Add example 1-->
+                <div class="example">
+                    <h4>EXAMPLE 1</h4>
+                    <p>
+                        For example, "the
+                        <span class="orange">foo</span>
+                        attribute’s value must be a
+                        <a href="">valid integer</a>
+                        " is a requirement on producers, as it lays out the allowed values; in contrast, the requirement "the
+                        <span class="orange">foo</span>
+                        attribute’s value must be parsed using the
+                        <a href="">rules for parsing integers</a>
+                        " is a requirement on consumers, as it describes how to process the content.
+                    </p>
+                </div>
                 <strong>Requirements on producers have no bearing whatsoever on consumers.</strong>
-                <!--TODO: Add example 2-->
+                <div class="example">
+                    <h4>EXAMPLE 2</h4>
+                    <p>
+                        Continuing the above example, a requirement stating that a particular attribute’s value is constrained to being a
+                        <a href="">valid integer</a>
+                        emphatically does not imply anything about the requirements on consumers. It might be that the consumers are in fact required to treat the attribute as an opaque string, completely unaffected by whether the value conforms to the requirements or not. It might be (as in the previous example) that the consumers are required to parse the value using specific rules that define how invalid (non-numeric in this case) values are to be processed.
+                    </p>
+                </div>
             </article>
 
             <article>
                 <h5>1.7.2. Typographic conventions</h5>
                 <p>This is a definition, requirement, or explanation.</p>
-                <!--TODO: Add note-->
-                <!--TODO: Add example 3-->
+                <div class="note">
+                    <h4>NOTE:</h4>
+                    <p>This is a note</p>
+                </div>
+                <div class="example">
+                    <h4>EXAMPLE 3</h4>
+                    <p>This is an example.</p>
+                </div>
+                <div class="issue">
+                    <p>This is an open issue.</p>
+                </div>
+                <div class="warning">
+                    <p><b>Warning!</b> This is a warning.</p>
+                </div>
+                <div class="code-example">
+                    <code>
+                        interface Example {
+                        // this is an IDL definition
+                        };
+                    </code>
+                </div>
+                <div class="domintro">
+                    <p>
+                        <strong>variable = object . method( [ optionalArgument ] )</strong>
+                        This is a note to authors describing the usage of an interface.
+                    </p>
+                </div>
+                <div class="comment">
+                    <p>'/* this is a CSS fragment */'</p>
+                </div>
                 <p>
                     The defining instance of a term is marked up like <b>this</b>. Uses of that term are marked up like
                     <a href="">this</a>
                     or like
                     <a href="">this</a>.
                 </p>
-
+                <p>
+                    The defining instance of an element, attribute, or API is marked up like
+                    <span class="orange tooltip">this</span>
+                    . References to that element, attribute, or API are marked up like
+                    <a href="">&lt;this&gt;</a>
+                    .
+                </p>
+                <p>
+                    Other code fragments are marked up <span class="orange">like this</span>.
+                </p>
+                <p>
+                    Byte sequences with bytes in the range 0x00 to 0x7F, inclusive, are marked up like <span class="orange">this</span>.
+                </p>
+                <p>
+                    Variables are marked up like <em>this</em>.
+                </p>
+                <p>
+                    In an algorithm, steps in <a href="">synchronous sections</a> are marked with ⌛.
+                </p>
+                <p>
+                    In some cases, requirements are given in the form of lists with conditions and corresponding requirements. In such cases, the requirements that apply to a condition are always the first set of requirements that follow the condition, even in the case of there being multiple sets of conditions for those requirements. Such cases are presented as follows:
+                </p>
+                <strong>
+                    This is a condition
+                </strong>
+                <strong>
+                    This is another condition
+                </strong>
+                <p>
+                    This is the requirement that applies to the conditions above.
+                </p>
+                <strong>
+                    This is a third condition
+                </strong>
+                <p>
+                    This is the requirement that applies to the third condition.
+                </p>
+            </article>
+            <article>
+                <h4>1.8. Privacy concerns</h4>
+                <em>This section is non-normative.</em>
+                <p>Some features of HTML trade user convenience for a measure of user privacy.</p>
+                <p>In general, due to the Internet’s architecture, a user can be distinguished from another by the user’s IP address. IP addresses do not perfectly match to a user; as a user moves from device to device, or from network to network, their IP address will change; similarly, NAT routing, proxy servers, and shared computers enable packets that appear to all come from a single IP address to actually map to multiple users. Technologies such as onion routing can be used to further anonymize requests so that requests from a single user at one node on the Internet appear to come from many disparate parts of the network.</p>
+                <p>However, the IP address used for a user’s requests is not the only mechanism by which a user’s requests could be related to each other. Cookies, for example, are designed specifically to enable this, and are the basis of most of the Web’s session features that enable you to log into a site with which you have an account.</p>
+                <p>There are other mechanisms that are more subtle. Certain characteristics of a user’s system can be used to distinguish groups of users from each other; by collecting enough such information, an individual user’s browser’s "digital fingerprint" can be computed, which can be as good, if not better, as an IP address in ascertaining which requests are from the same user.</p>
+                <p>Grouping requests in this manner, especially across multiple sites, can be used for both benign (and even arguably positive) purposes, as well as for malevolent purposes. An example of a reasonably benign purpose would be determining whether a particular person seems to prefer sites with dog illustrations as opposed to sites with cat illustrations (based on how often they visit the sites in question) and then automatically using the preferred illustrations on subsequent visits to participating sites. Malevolent purposes, however, could include governments combining information such as the person’s home address (determined from the addresses they use when getting driving directions on one site) with their apparent political affiliations (determined by examining the forum sites that they participate in) to determine whether the person should be prevented from voting in an election.</p>
+                <p>Since the malevolent purposes can be remarkably evil, user agent implementors are encouraged to consider how to provide their users with tools to minimize leaking information that could be used to fingerprint a user.</p>
+                <p>Unfortunately, as the first paragraph in this section implies, sometimes there is great benefit to be derived from exposing the very information that can also be used for fingerprinting purposes, so it’s not as easy as simply blocking all possible leaks. For instance, the ability to log into a site to post under a specific identity requires that the user’s requests be identifiable as all being from the same user. More subtly, though, information such as how wide text is, which is necessary for many effects that involve drawing text onto a canvas (e.g., any effect that involves drawing a border around the text) also leaks information that can be used to group a user’s requests. (In this case, by potentially exposing, via a brute force search, which fonts a user has installed, information which can vary considerably from user to user.)</p>
+                <p>Features in this specification which can be <strong>used to fingerprint the user</strong> are marked as this paragraph is. (This is a fingerprinting vector.)</p>
+                <p>Other features in the platform can be used for the same purpose, though, including, though not limited to:</p>
+                <ul>
+                    <li>The exact list of which features a user agents supports.</li>
+                    <li>The maximum allowed stack depth for recursion in script.</li>
+                    <li>
+                        Features that describe the user’s environment, like Media Queries and the
+                        <a href="" class="orange">Screen</a>
+                        object.
+                        <a href="">[MEDIAQ] </a>
+                        <a href="">[CSSOM-VIEW]</a>
+                    </li>
+                    <li>The user’s time zone.</li>
+                </ul>
+            </article>
+            <article>
+                <h4>1.9. A quick introduction to HTML</h4>
+                <em>This section is non-normative.</em>
+                <p>A basic HTML document looks like this:</p>
+                <code>
+                    <!--TODO: Fix this html snippet-->
+                    <!--<!DOCTYPE html>-->
+                    <!--<html>-->
+                    <!--<head>-->
+                        <!--<title>Sample page</title>-->
+                    <!--</head>-->
+                    <!--<body>-->
+                    <!--<h1>Sample page</h1>-->
+                    <!--<p>This is a <a href="demo.html">simple</a> sample.</p>-->
+                    <!--&lt;!&ndash; this is a comment &ndash;&gt;-->
+                    <!--</body>-->
+                    <!--</html>-->
+                </code>
+                <p>
+                    HTML documents consist of a tree of elements and text. Each element is denoted in the source by a
+                    <a href="">start tag</a>
+                    , such as "
+                    <a href="" class="orange">&lt;body&gt;</a>
+                    ", and an
+                    <a href="">end tag</a>
+                    , such as "
+                    <a href="" class="orange">&lt;/body&gt;</a>
+                    ". (Certain start tags and end tags can in certain cases be
+                    <a href="">omitted</a>
+                    and are implied by other tags.)
+                </p>
             </article>
 
         </section>

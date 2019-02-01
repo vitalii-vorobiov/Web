@@ -15,19 +15,25 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/W3C/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="509">
-              <caret line="251" column="42" selection-start-line="251" selection-start-column="42" selection-end-line="251" selection-end-column="42" />
+            <state relative-caret-position="538">
+              <caret line="395" column="44" selection-start-line="395" selection-start-column="44" selection-end-line="395" selection-end-column="44" />
               <folding>
                 <element signature="e#15692#15696#0" expanded="true" />
                 <element signature="e#15719#15723#0" expanded="true" />
                 <element signature="e#16602#16606#0" expanded="true" />
                 <element signature="e#16620#16624#0" expanded="true" />
-                <element signature="e#19270#19274#1" expanded="true" />
+                <element signature="e#19270#19274#0" expanded="true" />
                 <element signature="e#19282#19286#0" expanded="true" />
+                <element signature="e#24776#24780#0" expanded="true" />
+                <element signature="e#24784#24788#0" expanded="true" />
+                <element signature="e#31857#31861#0" expanded="true" />
+                <element signature="e#31865#31869#0" expanded="true" />
+                <element signature="e#32010#32014#0" expanded="true" />
+                <element signature="e#32019#32023#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -41,6 +47,11 @@
         <option value="HTML File" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>being a va</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -74,11 +85,6 @@
             <path>
               <item name="Web" type="b2602c69:ProjectViewProjectNode" />
               <item name="Web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Web" type="462c0819:PsiDirectoryNode" />
-              <item name="W3C" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -115,12 +121,13 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1548965959788</updated>
-      <workItem from="1548965961054" duration="4113000" />
+      <workItem from="1548965961054" duration="4409000" />
+      <workItem from="1549014236876" duration="2493000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4113000" />
+    <option name="totallyTimeSpent" value="6902000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -135,20 +142,20 @@
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24954791" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24954791" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32959184" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32959184" />
+      <window_info anchor="bottom" id="TODO" order="6" visible="true" weight="0.32959184" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32959184" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -181,15 +188,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/W3C/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="509">
-          <caret line="251" column="42" selection-start-line="251" selection-start-column="42" selection-end-line="251" selection-end-column="42" />
+        <state relative-caret-position="538">
+          <caret line="395" column="44" selection-start-line="395" selection-start-column="44" selection-end-line="395" selection-end-column="44" />
           <folding>
             <element signature="e#15692#15696#0" expanded="true" />
             <element signature="e#15719#15723#0" expanded="true" />
             <element signature="e#16602#16606#0" expanded="true" />
             <element signature="e#16620#16624#0" expanded="true" />
-            <element signature="e#19270#19274#1" expanded="true" />
+            <element signature="e#19270#19274#0" expanded="true" />
             <element signature="e#19282#19286#0" expanded="true" />
+            <element signature="e#24776#24780#0" expanded="true" />
+            <element signature="e#24784#24788#0" expanded="true" />
+            <element signature="e#31857#31861#0" expanded="true" />
+            <element signature="e#31865#31869#0" expanded="true" />
+            <element signature="e#32010#32014#0" expanded="true" />
+            <element signature="e#32019#32023#0" expanded="true" />
           </folding>
         </state>
       </provider>
